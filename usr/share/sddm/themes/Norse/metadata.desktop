@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=Simplicity
+
+Copyright=(c) 2019, Gabriel Retana (c) 2021, Linux Aarhus
+Screenshot=norse.png
+License=GPL
+Version=0.3
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=norse
+Theme-API=2.0
+Website=https://codeberg.org/fhdk/norse-sddm-theme
