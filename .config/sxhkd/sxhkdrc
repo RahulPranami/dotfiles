@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
 super + @space
@@ -13,6 +13,40 @@ super + @space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+#
+# custom hotkeys
+#
+
+# rofi
+super + shift + {w,r}
+	rofi -show {window, drun}
+
+# Volume 
+# how to set the name 
+# pactl info | grep "Default Sink"
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
+# Audio Mute
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle	
+
+# Brightness
+XF86MonBrightness{Up,Down}
+	brightnessctl --device='intel_backlight' set 5{+,-}%
+
+# Keyboard Brightness
+XF86KbdBrightness{Up,Down}
+	brightnessctl --device='asus::kbd_backlight' set 1{+,-}
+
+# Screenkey kill
+super + Print
+	killall screenkey
+# Screenkey
+Menu
+	screenkey
+
+
 
 #
 # bspwm hotkeys
