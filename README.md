@@ -13,3 +13,5 @@
 > dotfiles config --local status.showUntrackedFiles no
 
 > dotfiles add .vimrc .zshrc
+
+> ln -f 
