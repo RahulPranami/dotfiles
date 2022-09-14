@@ -62,13 +62,19 @@ keys = [
     Key([mod], "space", lazy.spawn('rofi -show run'), desc="Launch Rofi"),
 
     # Sound
-    Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
-    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -c 0 sset Master 1- unmute")),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -c 0 sset Master 1+ unmute")),
+    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@-5%")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@+5%")),
+
+#
+    #Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
+    #Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -c 0 sset Master 1- unmute")),
+    #Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -c 0 sset Master 1+ unmute")),
+
 
     # Keyboard Backlight
-    Key([mod], "Up", lazy.spawn("brightnessctl --device='asus::kbd_backlight' set +1")),   
-    Key([mod], "Down", lazy.spawn("brightnessctl --device='asus::kbd_backlight' set 1-")),
+    Key([], "XF86KbdBrightnessDown", lazy.spawn("brightnessctl --device='asus::kbd_backlight' set 1-")),
+    Key([], "XF86KbdBrightnessUp", lazy.spawn("brightnessctl --device='asus::kbd_backlight' set 1+")),
     
     # Monitor Brightness
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl --device='intel_backlight' set +10%")),
