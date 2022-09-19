@@ -8,7 +8,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 xsetroot -cursor_name left_ptr
 feh --bg-fill -z -r /usr/share/backgrounds
 picom &
-polybar &
+$HOME/.config/polybar/launch.sh
 
 # EndCustom
 
