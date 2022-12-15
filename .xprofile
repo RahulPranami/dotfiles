@@ -1,4 +1,0 @@
-nitrogen --restore &
-plank & 
-picom --experimental-backend &
-xbindkeys
