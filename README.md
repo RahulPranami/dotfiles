@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Hits](https://hits.sh/github.com/RahulPranami/dotfiles.svg)](https://hits.sh/github.com/RahulPranami/dotfiles/)
+
 ## how to backup dotfiles
 
 > git init $HOME/.dotfiles
