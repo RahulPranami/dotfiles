@@ -15,3 +15,6 @@
 > dotfiles add .vimrc .zshrc
 
 > ln -f 
+
+
+ -- ubuntu @ 18.208.34.138
