@@ -1,0 +1,32 @@
+# Take a look at the mako manpage with the command:
+#   man 5 mako
+# To view all configuration options.
+anchor=top-right
+width=400
+#height=10
+margin=10
+font=DaddyTimeMono Nerd Font 10
+# font=monofur Nerd Font 12
+
+layer=overlay
+background-color=#333333
+
+# format=<b>%a ⏵</b> %s\n%b
+#sort=-time
+#output=DP-2
+padding=0,5,10
+border-size=1
+#border-color=#88c0d0
+border-radius=3
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=0
+
+[urgency=normal]
+#border-color=#d08770
+
+[urgency=high]
+border-color=#bf616a
+text-color=#bf616a
+default-timeout=0

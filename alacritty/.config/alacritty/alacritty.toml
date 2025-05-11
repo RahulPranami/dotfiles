@@ -1,0 +1,82 @@
+general.live_config_reload = true
+
+# [env]
+# WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+# dimensions = { columns = 80, lines = 35 }
+padding = { x = 10, y = 10 }
+# dynamic_padding = true
+decorations = "none"
+opacity = 0.6
+blur = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+# normal = { family = "Fira Code Nerd Font" }
+# normal = { family = "Iosevka Nerd Font" }
+# normal = { family = "JetBrains Mono Nerd Font" }
+normal = { family = "DaddyTimeMono Nerd Font" }
+# normal = { family = "ComicShannsMono Nerd Font" }
+
+# size = 12
+
+# offset = { x = 0, y = 0 }
+# glyph_offset = { x = 0, y = 0 }
+
+builtin_box_drawing = true
+
+[colors]
+primary.background = "#2e3440"
+primary.foreground = "#d8dee9"
+primary.dim_foreground = "#a5abb6"
+
+cursor.text = "#2e3440"
+cursor.cursor = "#d8dee9"
+
+vi_mode_cursor.text = "#2e3440"
+vi_mode_cursor.cursor = "#d8dee9"
+
+selection.text = "CellForeground"
+selection.background = "#4c566a"
+
+normal.black = "#3b4252"
+normal.red = "#bf616a"
+normal.green = "#a3be8c"
+normal.yellow = "#ebcb8b"
+normal.blue = "#81a1c1"
+normal.magenta = "#b48ead"
+normal.cyan = "#88c0d0"
+normal.white = "#e5e9f0"
+
+bright.black = "#4c566a"
+bright.red = "#bf616a"
+bright.green = "#a3be8c"
+bright.yellow = "#ebcb8b"
+bright.blue = "#81a1c1"
+bright.magenta = "#b48ead"
+bright.cyan = "#8fbcbb"
+bright.white = "#eceff4"
+
+dim.black = "#373e4d"
+dim.red = "#94545d"
+dim.green = "#809575"
+dim.yellow = "#b29e75"
+dim.blue = "#68809a"
+dim.magenta = "#8c738c"
+dim.cyan = "#6d96a5"
+dim.white = "#aeb3bb"
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+unfocused_hollow = true
+thickness = 0.10
+
+[mouse]
+hide_when_typing = true
